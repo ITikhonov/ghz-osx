@@ -1,0 +1,19 @@
+
+Uses RDTSC processor instruction in a tight loop to measure how
+much time it takes for CPU to churn a million clock ticks. Then
+computes clock rate in GHz from this.
+
+
+== Build
+
+
+    $ curl -O https://raw.githubusercontent.com/ITikhonov/ghz-osx/master/clockspeed.c
+    $ make clockspeed
+    cc     clockspeed.c   -o clockspeed
+
+== Run
+
+    $ ./clockspeed 
+    1.4 GHz
+
+
